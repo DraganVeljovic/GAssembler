@@ -1,0 +1,28 @@
+.data1
+
+char1:
+.char 10
+
+.data2
+
+word1:
+.word labela1
+
+.text1
+
+jmp labela2
+
+labela1:
+mul r1, r1, 0
+mul r1, r1, 0
+
+.text2
+
+labela2:
+ldr r3, pc, 10
+
+jmp labela1
+
+.skip 4, '#'
+
+.end

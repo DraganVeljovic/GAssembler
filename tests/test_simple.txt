@@ -1,0 +1,8 @@
+.text1
+
+l:
+mul r1, r1, 0
+
+.extern write
+
+.end

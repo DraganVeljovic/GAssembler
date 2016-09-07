@@ -1,0 +1,24 @@
+.data1
+
+.word l2
+
+.text1 1000
+
+mul r1, r1, 0
+
+l:
+mul r1, r1, 0
+
+jmp l
+jmp l2
+
+.text2 2000
+
+.global start
+
+start:
+l2:
+jmp l
+
+
+.end start

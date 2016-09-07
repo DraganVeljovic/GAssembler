@@ -1,0 +1,36 @@
+.data
+
+.char a, b,   c
+
+.word w1,   w2, w3
+
+.text1
+
+pocetak:
+	add r1, r2, 3
+	sub r3, r1, 5
+	mul r1, r4, 4
+	div r5, r1, 2
+	cmp r1, r3
+	jz kraj
+sredina: shl r3, 2
+	mul r3, r2, 1
+	jnz sredina
+	add r0, r1, r3
+
+.text2 
+
+	add r1, r2, 3
+	sub r3, r1, 5
+	mul r1, r4, 4
+	div r5, r1, 2
+	cmp r1, r3
+	jz kraj
+
+kraj:
+	.end
+
+.text3
+
+nevidljiva:
+	jmp pocetak

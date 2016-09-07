@@ -1,0 +1,11 @@
+.text 100
+
+start:
+jmp labela
+
+labela:
+mul r1, r1, 0
+
+.text2
+
+.end start

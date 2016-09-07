@@ -1,0 +1,36 @@
+.text
+
+add r1, r2, 3
+sub r3, r4, 14
+mul r5, r6, -2
+div r7, r1, -13
+
+and r1, r2
+or r3, r4
+not r5, r6
+test r7, r1
+
+labela1:
+ldr r3, pc, =1050
+str r2, r1, =5
+
+pop r3
+push r5
+
+movtosfr r2, sp
+movfromsfr r4, pc
+
+mov r1, r3
+in r2, r5
+out r7, r6
+
+shl r1, r4, =5
+shr r5, r7, =13
+
+jn pc, labela1
+
+ret
+iret
+jmp =10000
+
+.end
